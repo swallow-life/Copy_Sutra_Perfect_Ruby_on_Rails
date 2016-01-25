@@ -1,3 +1,5 @@
 #9.8
 ./bin/rails g model schedule room_id:references started_at:timestamp finished_at:timestamp
 ./bin/rails g model room name:text
+#9.30
+./bin/rake routes
