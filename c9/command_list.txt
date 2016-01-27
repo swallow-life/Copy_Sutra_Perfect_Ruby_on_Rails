@@ -3,3 +3,6 @@
 ./bin/rails g model room name:text
 #9.30
 ./bin/rake routes
+#9.32
+./bin/rails g model bank_account amount:integer currency:string
+./bin/rake db:migrate
