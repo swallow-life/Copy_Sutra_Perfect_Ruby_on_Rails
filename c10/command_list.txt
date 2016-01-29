@@ -1,0 +1,3 @@
+#10.1
+gem install rack
+rackup config.ru -o 0.0.0.0 -p 3000
