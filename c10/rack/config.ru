@@ -28,8 +28,11 @@ App = ->(env) do
 	[200, {"Content-Type" => "text/html"}, ["Hello, Rack world!"]]
 end
 
-#10.3
-use UpcaseAll
-#10.4
+#10.5
 use RackToRuby
+use UpcaseAll
+#10.3
+# use UpcaseAll
+#10.4
+# use RackToRuby
 run App
