@@ -12,14 +12,22 @@ class BasicAuth
 			credentials = auth_header.scan(/Basic (.+)/).flatten.first
 			#「ユーザ名:パスワード」というフォーマットで格納されている
 			username, password = Base64.decode64(credentials).split(":", 2)
-			p username
-			p password
+			#10.12
+			if username == @username && password == @password
+				return @app.call(env)
+			end
 		end
+		# 認証情報がない、または間違っている場合
+		return request_credentials
+	end
 
-		return [
+	#10.12
+	private
+	def request_credentials
+		[
 			401,
 			{"WWW-Authenticate" => %Q(Basic realm="INPUT CREDENTIALS")},
 			["Authentication failed!"]
-			]
+		]
 	end
 end
