@@ -3,5 +3,3 @@ gem install rack
 rackup config.ru -o 0.0.0.0 -p 3000
 #10.7
 ./bin/rake middleware
-#10.10
-rails new basic_auth
