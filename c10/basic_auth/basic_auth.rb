@@ -1,3 +1,5 @@
+#10.13
+require 'base64'
 #10.10
 class BasicAuth
 	def initialize(app, username, password)
