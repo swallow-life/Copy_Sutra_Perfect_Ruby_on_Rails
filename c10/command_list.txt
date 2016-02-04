@@ -5,3 +5,5 @@ rackup config.ru -o 0.0.0.0 -p 3000
 ./bin/rake middleware
 #10.13
 rackup config.ru -o 0.0.0.0 -p 3000
+#10.20
+rails plugin new simple_auth_plugin
