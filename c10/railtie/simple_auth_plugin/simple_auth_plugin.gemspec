@@ -9,9 +9,10 @@ Gem::Specification.new do |s|
   s.version     = SimpleAuthPlugin::VERSION
   s.authors     = ["swallow-life"]
   s.email       = ["mshk_stt@yahoo.co.jp"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SimpleAuthPlugin."
-  s.description = "TODO: Description of SimpleAuthPlugin."
+  #10.30
+  s.homepage    = ""
+  s.summary     = "Simple auth plugin for Rails."
+  s.description = "Simple auth plugin for Rails. For Rails book"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
