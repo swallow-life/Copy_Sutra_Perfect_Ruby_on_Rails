@@ -1,0 +1,19 @@
+#6.26
+ja:
+  activerecord:
+    models:
+      event: イベント
+      #6.46
+      ticket: チケット
+    attributes:
+      event:
+        name: 名前
+        place: 場所
+        start_time: 開始時間
+        end_time: 終了時間
+        content: 内容
+        #6.78
+        event_image: イベント画像
+      #6.46
+      ticket:
+        comment: コメント
