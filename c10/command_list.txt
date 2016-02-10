@@ -7,3 +7,11 @@ rackup config.ru -o 0.0.0.0 -p 3000
 rackup config.ru -o 0.0.0.0 -p 3000
 #10.20
 rails plugin new simple_auth_plugin
+#10.30
+rake release
+#10.32
+mkdir engine
+rails plugin new status_show_plugin --full
+./bin/rails g controller Status
+#10.33
+rake app:routes
